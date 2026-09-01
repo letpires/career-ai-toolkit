@@ -1,46 +1,3 @@
----
-name: ai-ml-job-search-europe
-status: active
-schedule: Não documentada
-timezone: Europe/Lisbon
-updated: 2026-09-01
----
-
-# AI/ML job search in Europe
-
-## Objetivo
-
-Encontrar vagas atuais de engenharia de AI/ML, do nível pleno ao sênior, que sejam viáveis para uma pessoa baseada em Lisboa. A automação pesquisa as empresas, verifica elegibilidade geográfica, sugere networking baseado em evidências públicas e propõe projetos alinhados às melhores vagas.
-
-## Agenda
-
-- Frequência: não informada no material original.
-- Horário: não informado no material original.
-- Fuso horário: `Europe/Lisbon`.
-- Notificação: somente quando houver oportunidades novas ou atualizadas que passem pelos filtros.
-
-## Entradas e integrações
-
-- Pesquisa pública na web e em páginas oficiais de carreiras.
-- Histórico de execuções anteriores para deduplicação.
-- Gmail para entrega do relatório a destinatários configurados fora deste repositório.
-- Notion para registrar vagas e contatos nas bases configuradas.
-
-## Saída esperada
-
-Um relatório priorizado com vagas verificadas, links oficiais, avaliação de aderência, contatos estratégicos, mensagens personalizadas baseadas em fontes públicas e ideias de projetos para as melhores oportunidades.
-
-## Validação
-
-- Nenhuma vaga viola os filtros geográficos, de senioridade ou de idioma.
-- Elegibilidade para trabalho remoto a partir de Portugal foi verificada ou marcada como incerta.
-- Links de candidatura e sinais usados na personalização têm fontes verificáveis.
-- O relatório não contém dados pessoais sensíveis nem credenciais.
-- A automação não envia notificações quando não há mudanças relevantes.
-
-## Prompt
-
-```text
 Search for new mid-level through senior AI/ML engineering roles across Portugal, Spain, France, the United Kingdom, and selected high-value European remote opportunities.
 
 The goal is not simply to collect job listings.
@@ -1229,9 +1186,7 @@ Stage 4 — Email delivery
 
 If the run discovers meaningful NEW or UPDATED opportunities, send the completed report through Gmail to:
 
-[configured recipient 1]
-
-[configured recipient 2]
+[E-MAIL]
 
 Subject:
 
@@ -1418,11 +1373,3 @@ Do not default to asking for coffee, a meeting, 15 minutes, a call, or a referra
 Never sacrifice role quality merely to reach the target number of jobs.
 
 If no meaningful new openings or changes exist, do not notify and do not send an email.
-
---
-After doing this, add on Notion (db jobs, db networking, inside AI Jobs Tracking page), jobs you found and contacts for networking.
-```
-
-## Histórico
-
-- 2026-09-01 — adicionada ao repositório; endereços de e-mail substituídos por placeholders.
